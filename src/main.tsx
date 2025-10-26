@@ -9,6 +9,27 @@ import App from './App'
 const theme = createTheme({
   palette: {
     mode: 'light',
+    primary: {
+      main: '#FF0066', // Fucsia
+      contrastText: '#fff',
+    },
+    background: {
+      default: '#fff',
+      paper: '#fff',
+    },
+    text: {
+      primary: '#000',
+      secondary: '#666',
+    },
+  },
+  components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#FF0066',
+        },
+      },
+    },
   },
 })
 
