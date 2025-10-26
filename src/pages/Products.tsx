@@ -1,5 +1,5 @@
-import React from 'react'
-import Grid from '@mui/material/Grid'
+
+
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
@@ -14,10 +14,10 @@ const sampleProducts = [
 
 export default function Products() {
   return (
-    <Grid container spacing={3}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', margin: '-12px' }}>
       {sampleProducts.map((p) => (
-        <Grid item xs={12} sm={6} md={4} key={p.id}>
-          <Card>
+        <div key={p.id} style={{ width: '100%', padding: '12px', maxWidth: '33.333%' }}>
+          <Card sx={{ width: '100%' }}>
             {p.image && (
               <CardMedia component="img" height="140" image={p.image} alt={p.name} />
             )}
@@ -31,8 +31,8 @@ export default function Products() {
               <Button sx={{ mt: 2 }} variant="contained">Ver</Button>
             </CardContent>
           </Card>
-        </Grid>
+        </div>
       ))}
-    </Grid>
+    </div>
   )
 }
