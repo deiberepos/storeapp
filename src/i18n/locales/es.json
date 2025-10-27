@@ -1,0 +1,17 @@
+{
+  "app": {
+    "name": "FitApp",
+    "slogan": "Tu compañero digital para entrenar, alimentarte y equiparte mejor"
+  },
+  "navigation": {
+    "training": "Entrenamiento",
+    "nutrition": "Alimentación",
+    "community": "Comunidad",
+    "store": "Tienda"
+  },
+  "products": {
+    "addToCart": "Añadir al carrito",
+    "noImage": "Sin imagen",
+    "currency": "€"
+  }
+}
