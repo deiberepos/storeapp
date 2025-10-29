@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "FitApp",
+    "name": "FitApp-B",
     "slogan": "Tu compañero digital para entrenar, alimentarte y equiparte mejor"
   },
   "navigation": {
@@ -8,6 +8,16 @@
     "nutrition": "Alimentación",
     "community": "Comunidad",
     "store": "Tienda"
+  },
+  "training": {
+    "searchPlaceholder": "Buscar entrenamientos...",
+    "levels": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado"
+    },
+    "duration": "{{time}} min",
+    "noEquipment": "Sin equipamiento"
   },
   "products": {
     "addToCart": "Añadir al carrito",
