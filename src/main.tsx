@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
-import './index.css'
+import './i18n/i18n' // Importamos la configuración de i18n
 import App from './App'
 
 const theme = createTheme({
