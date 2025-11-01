@@ -47,7 +47,7 @@ export default function Navigation() {
         <Tab 
           icon={<ShoppingCartIcon />} 
           label={t('navigation.store')} 
-          value="/" 
+          value="/products" 
         />
       </Tabs>
     </Box>
