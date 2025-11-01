@@ -8,6 +8,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter'
 import RestaurantIcon from '@mui/icons-material/Restaurant'
 import GroupIcon from '@mui/icons-material/Group'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
+import PersonIcon from '@mui/icons-material/Person'
 import { headerStyles } from './styles'
 
 export default function Navigation() {
@@ -43,6 +44,11 @@ export default function Navigation() {
           icon={<GroupIcon />} 
           label={t('navigation.community')} 
           value="/community" 
+        />
+        <Tab 
+          icon={<PersonIcon />} 
+          label={t('navigation.spokesperson')} 
+          value="/spokesperson" 
         />
         <Tab 
           icon={<ShoppingCartIcon />} 
