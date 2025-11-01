@@ -10,54 +10,65 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        py: 3,
+        py: 0.5,
         px: 2,
-        mt: 'auto',
         backgroundColor: 'black',
-        color: 'white'
+        color: 'white',
+        height: '50px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}
     >
       <Container maxWidth="lg">
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 1
+            width: '100%',
+            justifyContent: 'space-between',
+            alignItems: 'center'
           }}
         >
-          <Typography
-            variant="h6"
-            component="span"
+          <Box
             sx={{
-              fontWeight: 'bold',
-              color: theme.palette.primary.main,
-              letterSpacing: 1,
-              fontSize: { xs: '1.5rem', sm: '1.75rem' }
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: 0.1,
+              flex: 1
             }}
           >
-            FitApp
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              color: 'white',
-              textAlign: 'center',
-              opacity: 0.9,
-              letterSpacing: 0.5
-            }}
-          >
-            Tu compañero perfecto para un estilo de vida saludable
-          </Typography>
+            <Typography
+              variant="h6"
+              component="span"
+              sx={{
+                fontWeight: 'bold',
+                color: theme.palette.primary.main,
+                letterSpacing: 1,
+                fontSize: { xs: '0.9rem', sm: '1rem' }
+              }}
+            >
+              FitApp-B
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{
+                color: 'white',
+                textAlign: 'center',
+                opacity: 0.9,
+                letterSpacing: 0.5
+              }}
+            >
+              Tu compañero perfecto para un estilo de vida saludable
+            </Typography>
+          </Box>
           <Typography
             variant="caption"
             sx={{
               color: 'rgba(255, 255, 255, 0.6)',
-              textAlign: 'center',
-              mt: 1,
               fontSize: '0.75rem',
-              fontStyle: 'italic'
+              fontStyle: 'italic',
+              pl: 2
             }}
           >
             © {new Date().getFullYear()} deiberepos

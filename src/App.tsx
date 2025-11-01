@@ -4,6 +4,7 @@ import Products from './pages/Products'
 import Training from './pages/Training'
 import Nutrition from './pages/Nutrition'
 import Community from './pages/Community'
+import Spokesperson from './pages/Spokesperson'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/training" element={<Training />} />
         <Route path="/nutrition" element={<Nutrition />} />
         <Route path="/community" element={<Community />} />
+        <Route path="/spokesperson" element={<Spokesperson />} />
       </Routes>
     </Layout>
   )
