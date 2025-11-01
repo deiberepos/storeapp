@@ -9,7 +9,8 @@ export default function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Products />} />
+        <Route path="/" element={<Training />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/training" element={<Training />} />
         <Route path="/nutrition" element={<Nutrition />} />
         <Route path="/community" element={<Community />} />

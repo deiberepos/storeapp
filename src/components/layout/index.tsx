@@ -1,7 +1,7 @@
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
 import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -18,9 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         {children}
       </Container>
-      <Box component="footer" sx={{ py: 2, textAlign: 'center', mt: 'auto' }}>
-        <Typography variant="caption">© {new Date().getFullYear()} deiberepos</Typography>
-      </Box>
+      <Footer />
     </Box>
   )
 }
